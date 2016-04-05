@@ -10,22 +10,22 @@
   <link rel="stylesheet" href="css/bootstrap-social.css">
   <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
 <style type="text/css">
-  .col-sm-6 {
+  #features .col-sm-6 {
   	padding-left: 0px;
   	padding-right: 0px;
   }
 
-  .col-sm-12 {
+  #features .col-sm-12 {
   	padding-left: 0px;
   	padding-right: 0px;
   }
 
-  .navbar{
+  #navigate .navbar{
   	margin-bottom: 0px;
   	border-radius: 0px;
   }
 
-  .jumbotron {
+  #features .jumbotron {
   	margin-bottom: 0px;
   }
 
@@ -46,8 +46,62 @@
 }
 
 .footer_1 .container-fluid {
-    background-color: #33495E;
+    background-color: orange;
 }
+
+.carousel-control.right{
+  background-image: none;
+  color: orange;
+}
+
+.carousel-control.left{
+  background-image: none;
+  color: orange;
+}
+
+#carousel-example .carousel-indicators .active{
+  background-color: orange;
+  border:1px solid orange;
+}
+
+#carousel-example .carousel-indicators li{
+  background-color: white;
+  border:1px solid orange;
+}
+
+#features .fa-stack:hover .fa-home {
+    color: orange;
+}
+
+#features .fa-stack:hover .fa-shopping-cart {
+    color: orange;
+}
+
+#features .fa-stack:hover .fa-circle {
+    color: white;
+}
+
+#features .fa-stack .fa-home {
+    color: white;
+}
+
+#features .fa-stack .fa-shopping-cart {
+    color: white;
+}
+
+#features .fa-stack .fa-circle {
+    color: orange;
+}
+
+
+/*#features .fa-home {
+    color: white;
+    background-color: orange;
+}
+#features .fa-circle {
+    color: white;
+    background-color: orange;
+}*/
 
 
 </style>
@@ -55,7 +109,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <!-- Header Nav Bar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav id="navigate" class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -63,14 +117,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#" style="font-size:25px;color:#E48F0E">antONyms</a>
+      <a class="navbar-brand" href="#" style="font-size:25px;color:#E48F0E;">antONyms</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#account">Account</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">ABOUT</a></li>
+        <li><a href="#features">FEATURES</a></li>
+        <li><a href="#account">SIGN IN</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -78,34 +132,25 @@
 
 <!-- Carousel Section -->
 
-<div id="carousel-example" class="carousel slide" data-ride="carousel">
+<div id="carousel-example" class="carousel slide" data-ride="carousel" style="height:400px; margin-top:50px; background-color:rgba(211, 211, 211, 0);">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example" data-slide-to="1"></li>
     <li data-target="#carousel-example" data-slide-to="2"></li>
   </ol>
 
-  <div class="carousel-inner">
+  <div class="carousel-inner" >
     <div class="item active">
-      <a href="#"><img src="images/carouselimage1.jpg" /></a>
-      <div class="carousel-caption">
-        <h3>Meow</h3>
-        <p>Just Kitten Around</p>
-      </div>
+      <center><img src="images/books_orange.png" style="height:200px; width:200px" /></center>
     </div>
     <div class="item">
-      <a href="#"><img src="images/carouselimage1.jpg" /></a>
-      <div class="carousel-caption">
-        <h3>Meow</h3>
-        <p>Just Kitten Around</p>
-      </div>
+      <center>
+      <img src="images/cards_orange.png" style="height:200px; width:200px"/>
+      <img src="images/cash_icon.png" style="height:200px; width:200px"/>
+      </center>
     </div>
     <div class="item">
-      <a href="#"><img src="images/carouselimage1.jpg" /></a>
-      <div class="carousel-caption">
-        <h3>Meow</h3>
-        <p>Just Kitten Around</p>
-      </div>
+      <center><img src="images/orange-school.png" style="height:200px; width:200px" /></center>
     </div>
   </div>
 
@@ -119,7 +164,7 @@
 
 <!-- Middle Top for about and login signup Section -->
 
-<div id="about" class="container-fluid">
+<!-- <div id="about" class="container-fluid">
 	<div class="row">
     	<div class="col-sm-12">
 	  		<div class="jumbotron">
@@ -128,11 +173,11 @@
 	  		</div>
 	     </div>
 	</div>
-</div>
+</div> -->
 
 <!-- Section for Upcoming and What's new notifications-->
 
-<div class="container-fluid">
+<div id="features" class="container-fluid">
 	<div class="row">
 
       <div class="col-sm-12" style="background-color:white;">
@@ -143,7 +188,12 @@
       </div>
     	<div class="col-sm-6">
 	  		<div class="jumbotron">
-          <center><p><span class="glyphicon glyphicon-home" style="font-size:75px;"></span></p>
+          <center><p><!-- <span class="glyphicon glyphicon-home" style="font-size:75px;"></span> -->
+            <span class="fa-stack fa-2x">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+</span>
+          </p>
             <h4>DOORSTEP DELIVERY</h4>
             <p style="font-size:15px;">We provide delivery of school books right at your doorstep</p>
           </center>
@@ -151,7 +201,12 @@
 	     </div>
     	<div class="col-sm-6">
     		<div class="jumbotron">
-	    		<center><p><span class="glyphicon glyphicon-shopping-cart" style="font-size:75px;"></span></p><h4>FLEXIBLE PAYMENTS</h4>
+	    		<center><p><!-- <span class="glyphicon glyphicon-shopping-cart" style="font-size:75px;"></span> -->
+            <span class="fa-stack fa-2x">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+</span>
+          </p><h4>FLEXIBLE PAYMENTS</h4>
             <p style="font-size:15px;">We accept both card or cash as payment methods</p></center> 
 	  		</div>
     	</div>
@@ -170,7 +225,7 @@
 	</div>
 </div> -->
 
-<div id="contact" class="container bg-grey">
+<div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">Get in Touch</h2>
   <div class="row">
     <div class="col-sm-5">
@@ -181,16 +236,16 @@
     </div>
     <div class="col-sm-7">
       <div class="row">
-        <div class="col-sm-3 form-group">
+        <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
-        <div class="col-sm-4 form-group">
+        <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
-        <div class="col-sm-6 form-group">
+        <div class="col-sm-12 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div>	
@@ -220,7 +275,7 @@
 </a></li>
 </ul>
                             
-					<center><p>© 2015 Designed and Developed by &nbsp;<a href="http://www.birdseyetech.com">Antonyms IT Divisions Private Ltd.</a></p></center>
+					<center><p>© 2015 Designed and Developed by &nbsp;<a href="http://www.birdseyetech.com">Antonyms Private Ltd.</a></p></center>
                                         <center>
 					<p><a href="privacy" target="_blank">Privacy Policy</a>  | 
                                             <a href="terms" target="_blank">Terms &amp; Conditions</a>
