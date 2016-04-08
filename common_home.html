@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <title>antonyms_home</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap-social.css">
   <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
 <style type="text/css">
+<<<<<<< HEAD
+
+=======
+>>>>>>> fe1b375bea3bbfc57414e08b91728a0ef44cb66c
   #features .col-sm-6 {
   	padding-left: 0px;
   	padding-right: 0px;
@@ -23,8 +33,31 @@
   #navigate .navbar{
   	margin-bottom: 0px;
   	border-radius: 0px;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
   }
 
+<<<<<<< HEAD
+/*  #navigate .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}*/
+
+  #navigate .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+  #navigate .navbar-inverse .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+=======
+>>>>>>> fe1b375bea3bbfc57414e08b91728a0ef44cb66c
   #features .jumbotron {
   	margin-bottom: 0px;
   }
@@ -47,6 +80,7 @@
 
 .footer_1 .container-fluid {
     background-color: orange;
+<<<<<<< HEAD
 }
 
 .carousel-control.right{
@@ -93,6 +127,94 @@
     color: orange;
 }
 
+#footer_section .fa-stack .fa-twitter {
+    color: orange;
+}
+
+#footer_section .fa-stack .fa-circle {
+    color: white;
+}
+
+#footer_section .fa-stack .fa-facebook {
+    color: orange;
+}
+
+#footer_section .fa-stack .fa-google-plus {
+    color: orange;
+}
+
+#footer_section .fa-stack .fa-linkedin {
+    color: orange;
+}
+
+
+#footer_section .fa-stack:hover .fa-twitter {
+    color: #00ABF1;
+}
+
+#footer_section .fa-stack:hover .fa-circle {
+    color: white;
+}
+
+#footer_section .fa-stack:hover .fa-facebook {
+    color: #3B5998;
+}
+
+#footer_section .fa-stack:hover .fa-google-plus {
+    color: #D94634;
+}
+
+#footer_section .fa-stack:hover .fa-linkedin {
+    color: #007AB9;
+}
+=======
+}
+
+.carousel-control.right{
+  background-image: none;
+  color: orange;
+}
+
+.carousel-control.left{
+  background-image: none;
+  color: orange;
+}
+
+#carousel-example .carousel-indicators .active{
+  background-color: orange;
+  border:1px solid orange;
+}
+
+#carousel-example .carousel-indicators li{
+  background-color: white;
+  border:1px solid orange;
+}
+
+#features .fa-stack:hover .fa-home {
+    color: orange;
+}
+
+#features .fa-stack:hover .fa-shopping-cart {
+    color: orange;
+}
+
+#features .fa-stack:hover .fa-circle {
+    color: white;
+}
+
+#features .fa-stack .fa-home {
+    color: white;
+}
+
+#features .fa-stack .fa-shopping-cart {
+    color: white;
+}
+
+#features .fa-stack .fa-circle {
+    color: orange;
+}
+
+>>>>>>> fe1b375bea3bbfc57414e08b91728a0ef44cb66c
 
 /*#features .fa-home {
     color: white;
@@ -102,14 +224,52 @@
     color: white;
     background-color: orange;
 }*/
+<<<<<<< HEAD
+=======
 
+>>>>>>> fe1b375bea3bbfc57414e08b91728a0ef44cb66c
 
 </style>
+
+
+<!--  SCRIPTS  -->
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar forjq, footer a[href='#myPage']").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+
 </head>
+
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <!-- Header Nav Bar -->
+<<<<<<< HEAD
+<nav id="navigate" class="navbar navbar-inverse navbar-fixed-top main-nav">
+=======
 <nav id="navigate" class="navbar navbar-inverse navbar-fixed-top">
+>>>>>>> fe1b375bea3bbfc57414e08b91728a0ef44cb66c
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -121,18 +281,141 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
+        <li><a class="forjq" href="#home">ABOUT</a></li>
+        <li><a class="forjq" href="#features">FEATURES</a></li>
+        <li><a class="cd-signin" href="#0">SIGN IN</a></li>
+        <li><a class="forjq" href="#contact">CONTACT</a></li>
+=======
         <li><a href="#home">ABOUT</a></li>
         <li><a href="#features">FEATURES</a></li>
         <li><a href="#account">SIGN IN</a></li>
         <li><a href="#contact">CONTACT</a></li>
+>>>>>>> fe1b375bea3bbfc57414e08b91728a0ef44cb66c
       </ul>
     </div>
   </div>
 </nav>
 
+<!-- Modal -->
+<!-- <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog"> -->
+
+    <!-- Modal content-->
+    <!-- <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+      <ul class="cd-switcher">
+        <li><a href="#0">Sign in</a></li>
+        <li><a href="#0">New account</a></li>
+      </ul>
+
+      <div id="cd-login"> <!-- log in form -->
+        <form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signin-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signin-password">Password</label>
+            <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+            <a href="#0" class="hide-password">Hide</a>
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="remember-me" checked>
+            <label for="remember-me">Remember me</label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width" type="submit" value="Login">
+          </p>
+        </form>
+        
+        <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-login -->
+
+      <div id="cd-signup"> <!-- sign up form -->
+        <form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-username" for="signup-username">Username</label>
+            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signup-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signup-password">Password</label>
+            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+            <a href="#0" class="hide-password">Hide</a>
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="accept-terms">
+            <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Create account">
+          </p>
+        </form>
+
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-signup -->
+
+      <div id="cd-reset-password"> <!-- reset password form -->
+        <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+        <form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="reset-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Reset password">
+          </p>
+        </form>
+
+        <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+      </div> <!-- cd-reset-password -->
+      <a href="#0" class="cd-close-form">Close</a>
+    </div> <!-- cd-user-modal-container -->
+  </div> <!-- cd-user-modal -->
+
 <!-- Carousel Section -->
 
+<<<<<<< HEAD
+<div id="carousel-example" class="carousel slide" data-ride="carousel" style="height:400px; margin-top:50px; background-color:rgba(211, 211, 211, 0.15);">
+=======
 <div id="carousel-example" class="carousel slide" data-ride="carousel" style="height:400px; margin-top:50px; background-color:rgba(211, 211, 211, 0);">
+>>>>>>> fe1b375bea3bbfc57414e08b91728a0ef44cb66c
   <ol class="carousel-indicators">
     <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example" data-slide-to="1"></li>
@@ -261,21 +544,45 @@
 			<div class="footer-main">
                             
                                     <ul>
-                                            <li><a class="btn btn-social-icon btn-twitter">
-  <span class="fa fa-twitter"></span>
-</a></li>
-                                            <li><a class="btn btn-social-icon btn-facebook">
-  <span class="fa fa-facebook"></span>
-</a></li>
-                                            <li><a class="btn btn-social-icon btn-google">
+                                            <li><!-- <a class="btn btn-social-icon btn-twitter"> -->
+  <!-- <span class="fa fa-twitter"></span>
+</a> --><a href="#">
+        <span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span></a>
+</li>
+                                            <li><!-- <a class="btn btn-social-icon btn-facebook">
+  <span class="fa fa-facebook"></span> 
+</a>--><a href="#">
+        <span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+</span></a>
+</li>
+                                            <li><!-- <a class="btn btn-social-icon btn-google">
   <span class="fa fa-google"></span>
-</a></li>
-                                            <li><a class="btn btn-social-icon btn-linkedin">
+</a> --><a href="#">
+        <span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+</span></a>
+</li>
+                                            <li><!-- <a class="btn btn-social-icon btn-linkedin">
   <span class="fa fa-linkedin"></span>
-</a></li>
+</a> --><a href="#">
+        <span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+</span></a>
+</li>
 </ul>
                             
+<<<<<<< HEAD
+					<center><p>© 2015 Designed and Developed by &nbsp;<a href="#">BookList Private Ltd.</a></p></center>
+=======
 					<center><p>© 2015 Designed and Developed by &nbsp;<a href="http://www.birdseyetech.com">Antonyms Private Ltd.</a></p></center>
+>>>>>>> fe1b375bea3bbfc57414e08b91728a0ef44cb66c
                                         <center>
 					<p><a href="privacy" target="_blank">Privacy Policy</a>  | 
                                             <a href="terms" target="_blank">Terms &amp; Conditions</a>
@@ -286,6 +593,9 @@
     
 </section>
 <!--Copyright section within footer-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
 
 </body>
 </html>
